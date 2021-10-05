@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
-    <title>Document</title>
+    <title>My collection</title>
   </head>
   <nav class="navbar">
     <span class="open-slide">
@@ -30,9 +30,64 @@
   <body>
     <main>
       <div class="discsintro">
-        <h1></h1>
+        <div class="h1discs">
+          <h1>Discs</h1>
+        </div>
+        <p class="pintro">
+          I have far to many discs in my collection. On this site you have the
+          opportunity to view all and I encourage you to using the filtering &
+          sorting options to view them in different arrangements.
+        </p>
       </div>
+
+      <div class="filterandsort">
+        <div class="filter">
+          <h3>Filter</h3>
+          <span class="filtericon">
+            <img src="/assets/filtericon.svg" alt="three lines" />
+          </span>
+
+
+          <div  id="filterjs" class="filtermenu">
+        <span class="titelclose"><h2>Filters</h2> <a href="#" id="closetoo">&times;</a></span>
+        <span class="type"><p>Type </p><img class="openicon" src="/assets/openicon.svg" alt=""></span>
+        <span class="type"><p>Plastic</p><img src="/assets/openicon.svg" alt=""></span>
+        <span class="type"><p>Manufacturer </p><img src="/assets/openicon.svg" alt=""></span>
+        <span class="type"><p>In my bag </p><img src="/assets/openicon.svg" alt=""></span>
+        
+        
+        
+          </div>
+        </div>
+
+
+        <div class="sorting">
+          <h3>Sorting</h3>
+          <span class="sortingicon">
+            <img src="/assets/sortingicon.svg" alt="up and down icon" />
+          </span>
+        </div>
+      </div>
+
+      <div class="maincontent">
+        <div class="disctemplate">
+          <a href="#">
+            <img
+              src="http://nomames.dk/discs/small/pure_opto_x_black_silver_1.jpg"
+              alt="Discgolf disc"
+            />
+          </a>
+          <span class="info">
+            <h2 class="discname">Opto Explorer</h2>
+            <h3 class="type">Fairway Driver</h3>
+            <span class="numbers">
+              <p class="numbers">S7 - G5 - T0 - F2</p>
+            </span>
+          </span>
+        </div>
+
     </main>
+
     <script src="js/js.js"></script>
   </body>
 </html>
