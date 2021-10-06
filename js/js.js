@@ -17,11 +17,10 @@ function closeSlideMenu() {
 document.querySelector(".filter").addEventListener("click", openFilterMenu);
 
 function openFilterMenu() {
-  document.getElementById("filterjs").style.width = "200px";
+  document.querySelector("#filterjs").classList.add("open");
 }
+document.querySelector("#a1").addEventListener("click", closeFiltermenu);
 
-document.querySelector("#closetoo").addEventListener("click", closeFiltermenu);
-console.log("hola");
 function closeFiltermenu() {
-  document.getElementById("filterjs").style.width = "0";
+  document.querySelector("#filterjs").classList.remove("open");
 }
