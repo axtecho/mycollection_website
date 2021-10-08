@@ -32,10 +32,11 @@
   list-style: none;
   align-items: center;
 }
-.navbar h1 {
+.navh1 {
   align-self: center;
   margin-left: 18vw;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 .navbar li {
   text-align: center;
@@ -112,12 +113,18 @@
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-
+.h1discs h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
 .pintro {
   display: flex;
   flex-direction: column;
   padding: 2rem 1.5rem 0 1.5rem;
   font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .filter {
@@ -130,8 +137,9 @@
   color: white;
   align-self: center;
   padding-left: 0.5rem;
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 .filtericon {
   margin-left: auto;
@@ -154,8 +162,9 @@
   color: white;
   align-self: center;
   padding-left: 0.5rem;
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .sortingicon {
@@ -174,7 +183,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
   column-gap: 2rem;
-  row-gap: 1.5rem;
+  row-gap: 5rem;
   margin-top: 4.5rem;
 }
 
@@ -188,6 +197,7 @@ main {
   margin-top: 0.5rem;
 }
 .info h2 {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   margin-bottom: 0.2rem;
   font-size: 1.4rem;
@@ -195,13 +205,15 @@ main {
 
 .info h3 {
   margin-bottom: 0.2rem;
-  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-size: 1rem;
 }
 .numbers {
   display: flex;
   font-size: 1rem;
-  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 /* -----------------------FILTER MENU--------------------------------- */
@@ -220,7 +232,7 @@ main {
 }
 
 .filtermenu p {
-  padding: 10px 10px 10px 15px;
+  padding: 10px 10px 10px 5px;
 }
 
 .filtermenu a {
@@ -232,14 +244,22 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 0.8rem;
-  margin-left: 0.8rem;
-  border-bottom: 1px solid grey;
+
   font-weight: 100;
   font-size: 1.2rem;
-  padding-bottom: 0.4rem;
 }
-.type img {
+
+.undertype {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-bottom: 0.9rem;
+}
+.undertype img {
   height: 12px;
   width: 18px;
 }
@@ -251,12 +271,165 @@ main {
   padding-right: 0.8rem;
   margin-bottom: 2rem;
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
-
+.titelclose h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
 .open {
-  width: 200px;
+  width: 300px;
 }
 
+.type-borderdiv {
+  border-bottom: 1px solid grey;
+  height: 2.5rem;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+}
+
+.plastic-borderdiv {
+  border-bottom: 1px solid grey;
+  height: 2.5rem;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+}
+
+.manu-borderdiv {
+  border-bottom: 1px solid grey;
+  height: 2.5rem;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+}
+.open-type {
+  height: 9rem;
+}
+.open-type3 {
+  height: 7rem;
+}
+.overalloptions {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.2;
+}
+.overalloptionsPlastic {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.2;
+}
+.overalloptionsManu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.2;
+}
+.putcirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.midcirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.faircirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.discirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.puttapproachcirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.basecirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.goldcirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.optocirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.optoxcirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.latcirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.innovacirkel {
+  height: 12px;
+  width: 12px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.cirkelfill {
+  border: 0px solid black;
+  background-color: #f15c25;
+}
 /* --------------------------MEDIA QUERIES-------------------------------- */
 @media (min-width: 800px) {
   .maincontent {
@@ -265,5 +438,12 @@ main {
     column-gap: 2rem;
     row-gap: 1.5rem;
     margin-top: 4.5rem;
+  }
+
+  .filterandsort {
+    width: 40vw;
+  }
+  .discsintro {
+    width: 40vw;
   }
 }

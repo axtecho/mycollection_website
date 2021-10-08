@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
+
     <title>My collection</title>
   </head>
   <nav class="navbar">
@@ -24,7 +31,9 @@
       <a href="#">My collection</a>
       <a href="#">Contact</a>
     </div>
-    <h1>My collection</h1>
+    <span class="navh1">
+      <h1>My collection</h1>
+    </span>
   </nav>
 
   <body>
@@ -48,18 +57,95 @@
           </span>
         </div>
 
-          <div  id="filterjs" class="filtermenu">
-        <div class="titelclose"><h2>Filters</h2> <a href="#" id="a1"> &times; </a> </div>
-        <span class="type"><p>Type </p><img class="openicon" src="/assets/openicon.svg" alt=""></span>
-        <span class="type"><p>Plastic</p><img src="/assets/openicon.svg" alt=""></span>
-        <span class="type"><p>Manufacturer </p><img src="/assets/openicon.svg" alt=""></span>
-        <span class="type"><p>In my bag </p><img src="/assets/openicon.svg" alt=""></span>
-        
-        
-        
+        <div id="filterjs" class="filtermenu">
+          <div class="titelclose">
+            <h2>Filters</h2>
+            <a href="#" id="a1"> &times; </a>
           </div>
-        
+          <div class="type-borderdiv">
+            <span class="undertype"
+              ><p>Type</p>
+              <img
+                class="openicon"
+                src="/assets/openicon.svg"
+                alt="arrowdown"
+              />
+            </span>
 
+            <span class="overalloptions">
+              <div class="putoptions">
+                <div class="putcirkel"></div>
+                <a href="#">Putter/Approach</a>
+              </div>
+
+              <div class="midrangeoptions">
+                <div class="midcirkel"></div>
+                <a href="#">Midrange</a>
+              </div>
+
+              <div class="fairwayoptions">
+                <div class="faircirkel"></div>
+                <a href="#">Fairway Driver</a>
+              </div>
+
+              <div class="distanceoptions">
+                <div class="discirkel"></div>
+                <a href="#">Distance Driver</a>
+              </div>
+            </span>
+          </div>
+
+          <div class="plastic-borderdiv">
+            <span class="undertype"
+              ><p>Plastic</p>
+              <img class="openicon2" src="/assets/openicon.svg" alt="arrowdown"
+            /></span>
+
+            <span class="overalloptionsPlastic">
+              <div class="baseoption">
+                <div class="basecirkel"></div>
+                <a href="#">Base</a>
+              </div>
+              <div class="goldoption">
+                <div class="goldcirkel"></div>
+                <a href="#">Goldline</a>
+              </div>
+              <div class="optooption">
+                <div class="optocirkel"></div>
+                <a href="#">Opto</a>
+              </div>
+              <div class="optoxoption">
+                <div class="optoxcirkel"></div>
+                <a href="#">Opto-X</a>
+              </div>
+            </span>
+          </div>
+
+          <div class="manu-borderdiv">
+            <span class="undertype"
+              ><p>Manufacturer</p>
+              <img class="openicon3" src="/assets/openicon.svg" alt="arrowdown"
+            /></span>
+            <span class="overalloptionsManu">
+              <div class="latoption">
+                <div class="latcirkel"></div>
+                <a href="#">Latitude 64</a>
+              </div>
+
+              <div class="innovaoption">
+                <div class="innovacirkel"></div>
+                <a href="#">Innova</a>
+              </div>
+            </span>
+          </div>
+
+          <div class="type-borderdiv">
+            <span class="undertype"
+              ><p>In my bag</p>
+              <img src="/assets/openicon.svg" alt="arrowdown"
+            /></span>
+          </div>
+        </div>
 
         <div class="sorting">
           <h3>Sorting</h3>
@@ -70,22 +156,24 @@
       </div>
 
       <div class="maincontent">
-        <div class="disctemplate">
-          <a href="#">
-            <img
-              src="http://nomames.dk/discs/small/pure_opto_x_black_silver_1.jpg"
-              alt="Discgolf disc"
-            />
-          </a>
-          <span class="info">
-            <h2 class="discname">Opto Explorer</h2>
-            <h3 class="type">Fairway Driver</h3>
-            <span class="numbers">
-              <p class="numbers">S7 - G5 - T0 - F2</p>
+        <template id="thistemplate">
+          <div class="disctemplate">
+            <a href="#">
+              <img
+                src="http://nomames.dk/discs/small/pure_opto_x_black_silver_1.jpg"
+                alt="Discgolf disc"
+              />
+            </a>
+            <span class="info">
+              <h2 class="discname">Opto Explorer</h2>
+              <h3 class="type">Fairway Driver</h3>
+              <span class="numbers">
+                <p class="numbers">S7 - G5 - T0 - F2</p>
+              </span>
             </span>
-          </span>
-        </div>
-
+          </div>
+        </template>
+      </div>
     </main>
 
     <script src="js/js.js"></script>
